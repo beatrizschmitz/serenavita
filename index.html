@@ -226,6 +226,22 @@ footer a:hover{text-decoration:underline;color:var(--cream)}
 .gal img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
 .gal figure:hover img{transform:scale(1.06)}
 
+/* celular: alvos de toque confortáveis (mín. 44 px) e textos legíveis */
+@media(max-width:940px){
+  .info a,.fi a{display:inline-block;padding:.7rem 0}
+  .eyebrow{font-size:.84rem}
+  .tag{font-size:.8rem}
+  .info li{grid-template-columns:1fr;gap:.2rem}
+}
+@media(max-width:480px){
+  body{font-size:16.5px}
+  .wrap{width:min(1160px,100% - 32px)}
+  .btn{width:100%}
+  .actions{flex-direction:column}
+  .nav .btn{width:auto}
+  .form{padding:1.6rem}
+}
+
 /* animações suaves (desligadas para quem prefere menos movimento) */
 @keyframes rise{from{opacity:0;transform:translateY(26px)}}
 @keyframes arch-in{from{opacity:0;transform:translateY(34px) scale(.96)}}
